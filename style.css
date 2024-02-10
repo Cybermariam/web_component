@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
+}
+main {
+  background-color: #e5e5f5;
+  width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 250px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+p {
+  font-size: 12px;
+}
+.first-section {
+  display: flex;
+  padding-top: 1.5rem;
+  gap: 0.5rem;
+}
+.fa-arrow-left {
+  color: #8686c1;
+}
+.back-list {
+  color: #bdbddd;
+}
+.day {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.present-day {
+  font-weight: 400;
+  color: #b8b8b8;
+}
+.add-day {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid #c8c8f3;
+}
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border: 1px solid #e9e9ee;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+.progress-bar {
+  width: 33%;
+  height: 8px;
+  background-color: #8686c1;
+  border-radius: 8px;
+}
+.progress-text {
+  text-align: center;
+  margin-top: 5px;
+  color: #bdbddd;
+  font-size: 10px;
+}
+form {
+  margin-top: 20px;
+}
+label {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  margin-left: -8px;
+  margin-bottom: 22px;
+}
+
+label input {
+  visibility: hidden;
+  appearance: none;
+}
+label span {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #b8b8b8;
+  border-radius: 50%;
+}
+/*ul li */
+label span:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 8px;
+  height: 3px;
+  border-left: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  transform: rotate(-40deg);
+}
+label p {
+  color: #c8c8f3;
+}
+.tick-background {
+  border: none;
+  background-color: #b5ea81;
+}
+.last-child {
+  border-bottom: 1px solid #e5e5f5;
+  padding-bottom: 20px;
+}
+.footer {
+  margin-top: -15px;
+}
+.footer p {
+  color: #b8b8b8;
+  margin-bottom: 8px;
+}
+
+.button-container {
+  display: flex;
+  gap: 40px;
+}
+.buttons {
+  width: 100px;
+  height: 30px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  color: rgba(131, 119, 119, 0.5);
+}
+
+.yellow {
+  background-color: #f5ed84;
+}
+
+.green {
+  background-color: #b5ea81;
+}
+.peach {
+  background-color: #f8aaaa;
+}
+.lilac {
+  background-color: #b3b3ef;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  .container {
+    width: 250px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
