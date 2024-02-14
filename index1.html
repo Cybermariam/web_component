@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="first-section">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p class="back-list">Back to lists</p>
+        </div>
+
+        <div class="day">
+          <h2 class="present-day">TODAY</h2>
+          <button class="add-day">+</button>
+        </div>
+
+        <progress-bar-component></progress-bar-component>
+
+        <checkbox-component id="checkbox1" checked
+          >Meditation</checkbox-component
+        >
+        <checkbox-component id="checkbox2">Pick up Arena</checkbox-component>
+        <checkbox-component id="checkbox3"
+          >Set up meeting with Jay</checkbox-component
+        >
+        <checkbox-component id="checkbox4">Finish Daily Ui</checkbox-component>
+        <checkbox-component id="checkbox5"
+          >Second edits on article</checkbox-component
+        >
+        <checkbox-component id="checkbox6" checked
+          >Email Chris</checkbox-component
+        >
+
+        <footer-component></footer-component>
+      </div>
+    </main>
+
+    <script src="progress-bar-component.js"></script>
+    <script src="checkbox-component.js"></script>
+    <script src="footer-component.js"></script>
+  </body>
+</html>
